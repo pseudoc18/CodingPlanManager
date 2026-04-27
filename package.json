@@ -1,0 +1,48 @@
+{
+  "name": "coding-plan-manager",
+  "version": "0.1.0",
+  "description": "Local desktop account and API quota manager for Codex, Claude Code, and future coding agents.",
+  "main": "out/main/main.js",
+  "scripts": {
+    "dev": "node scripts/run-electron-vite-dev.cjs",
+    "build": "tsc -b && electron-vite build",
+    "build:renderer": "vite build",
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "keywords": [
+    "codex",
+    "claude",
+    "electron",
+    "quota",
+    "api-key"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "electron-store": "^10.1.0",
+    "lucide-react": "^0.561.0",
+    "recharts": "^3.6.0"
+  },
+  "devDependencies": {
+    "@electron-toolkit/preload": "^3.0.2",
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react-swc": "^4.2.2",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^30.5.1",
+    "electron-vite": "^4.0.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.59.1",
+    "vite": "^7.2.7",
+    "wait-on": "^9.0.3"
+  }
+}
